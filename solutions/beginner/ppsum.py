@@ -1,14 +1,11 @@
-import sys
-
-t = int(sys.stdin.readline())
-
-
 def _sum(k):
     return k * (k + 1) / 2
 
 
+t = input()
+
 for i in range(t):
-    d, n = map(int, sys.stdin.readline().split(' '))
+    d, n = map(int, raw_input().split())
 
     for j in range(d):
         n = _sum(n)

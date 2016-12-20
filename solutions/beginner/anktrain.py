@@ -1,8 +1,3 @@
-import sys
-
-t = int(sys.stdin.readline())
-
-
 partners = (
     ('3UB', '6UB'),
     ('2MB', '5MB'),
@@ -27,7 +22,9 @@ def _partner(k):
     return str(k - (int(a) - int(p[0]))) + p[1:]
 
 
+t = input()
+
 for i in range(t):
-    n = int(sys.stdin.readline())
+    n = input()
 
     print _partner(n)
